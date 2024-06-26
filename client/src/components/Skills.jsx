@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 import HTML from "../assets/html5-logo-31813.png";
 import TAILWIND from "../assets/icons8-tailwind-css-480.png";
 import JS from "../assets/javascript-39417.png";
@@ -108,13 +108,28 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full">
-      <h2 className="text-center text-4xl md:text-5xl font-semibold">
-        My <span className="text-secondary">Skills</span>
-      </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center my-20">
-        {skills.map((skill) => (
-          <SkillCard key={skill.id} img={skill.src} title={skill.title} />
+    <div className="w-full min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-20 px-4">
+      <motion.h2
+        className="text-center text-4xl md:text-5xl font-bold text-white mb-16"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        My{" "}
+        <span className="text-secondary bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+          Skills
+        </span>
+      </motion.h2>
+      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+        {skills.map((skill, index) => (
+          <motion.div
+            key={skill.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            <SkillCard img={skill.src} title={skill.title} />
+          </motion.div>
         ))}
       </div>
     </div>
