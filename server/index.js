@@ -4,7 +4,10 @@ require("dotenv").config();
 const cors = require("cors");
 const { dbConnection } = require("./config/dbConnection");
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: [
+    "http://localhost:5173",
+    "https://rohith-manjunath-portfolio.netlify.app",
+  ],
   credentials: true,
 };
 const FormRoute = require("./routes/FormRoute");
