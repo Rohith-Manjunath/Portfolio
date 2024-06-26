@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 const HeroSection = () => {
   return (
     <div className="px-10 md:px-16 w-full mt-28 lg:mt-20 lg:h-[100vh]  grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div className="flex items-start justify-center flex-col gap-4">
+      <div className="flex items-start justify-center flex-col gap-4 lg:gap-5">
         <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">
           Hello, It's me
         </span>
@@ -54,8 +54,13 @@ const HeroSection = () => {
           More About Me
         </a>
       </div>
-      <div className="flex items-center justify-start lg:justify-center">
-        <img src={Image} className="w-full max-w-[380px] rounded-full" alt="" />
+      <div className="hidden lg:flex items-center justify-start lg:justify-center">
+        <img
+          src={Image}
+          className="w-full max-w-[380px] rounded-full"
+          loading="lazy"
+          alt=""
+        />
       </div>
     </div>
   );

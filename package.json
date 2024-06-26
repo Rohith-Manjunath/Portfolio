@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "tag-cloud": "^2.0.1",
+    "TagCloud": "^2.5.0"
+  }
+}
