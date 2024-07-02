@@ -7,6 +7,7 @@ const corsOptions = {
   origin: [
     "http://localhost:5173",
     "https://rohith-manjunath-portfolio.netlify.app",
+    "https://rohith-manjunath-portfolio.netlify.app/",
   ],
   credentials: true,
 };

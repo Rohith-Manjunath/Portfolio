@@ -48,7 +48,7 @@ const Navbar = () => {
       >
         <motion.a
           href="/"
-          className="text-2xl font-bold"
+          className="text-2xl font-bold text-white"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
 
         <motion.button
-          className="md:hidden text-3xl"
+          className="md:hidden text-3xl text-white"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={handleOpenMenu}
@@ -84,7 +84,7 @@ const Navbar = () => {
             transition={{ type: "tween", duration: 0.3 }}
           >
             <motion.button
-              className="absolute top-6 right-6 text-3xl"
+              className="absolute top-6 right-6 text-3xl text-white"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={handleCloseMenu}
@@ -93,8 +93,8 @@ const Navbar = () => {
             </motion.button>
             <NavLink href="/">Home</NavLink>
             <NavLink href="#about">About</NavLink>
-            <NavLink href="#experience">Experience</NavLink>
             <NavLink href="#skills">Skills</NavLink>
+            <NavLink href="#experience">Experience</NavLink>
             <NavLink href="#projects">Projects</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </motion.div>

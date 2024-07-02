@@ -40,9 +40,10 @@ cross-functional teams to deliver high-quality solutions.`,
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8"
-          initial={{ y: -50 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           Professional{" "}
           <span className="text-secondary bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
@@ -51,9 +52,10 @@ cross-functional teams to deliver high-quality solutions.`,
         </motion.h2>
         <motion.h3
           className="text-2xl md:text-3xl font-semibold text-center mb-16 text-purple-400"
-          initial={{ y: -30 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           My Path in the Tech World
         </motion.h3>

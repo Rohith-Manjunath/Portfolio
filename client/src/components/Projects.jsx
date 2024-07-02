@@ -91,9 +91,10 @@ A responsive and user-friendly movie app built with React, utilizing The Movie D
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-center font-bold text-4xl lg:text-5xl mb-16"
-          initial={{ y: -50 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          viewport={{ once: true }}
         >
           My{" "}
           <span className="text-secondary bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
@@ -108,12 +109,7 @@ A responsive and user-friendly movie app built with React, utilizing The Movie D
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
+            <motion.div key={project.id}>
               <ProjectsCard project={project} />
             </motion.div>
           ))}

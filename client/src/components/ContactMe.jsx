@@ -23,7 +23,7 @@ const ContactMe = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("https://portfolio-7qyf.onrender.com/api/form", {
+      const res = await fetch("https://portfolio-6xcl.onrender.com/api/form", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message, subject }),

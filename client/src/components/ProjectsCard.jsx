@@ -7,7 +7,10 @@ const ProjectsCard = ({ project }) => {
     <motion.div
       className="hover:cursor-pointer relative overflow-hidden rounded-lg shadow-lg group h-[530px] lg:h-[450px] border-2 border-purple-500 hover:border-purple-300 transition-colors duration-300"
       whileHover={{ scale: 1.03 }}
-      transition={{ duration: 0.3 }}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.6 }}
+      viewport={{ once: true }}
     >
       <img
         src={project.img}
