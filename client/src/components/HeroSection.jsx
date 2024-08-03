@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../assets/my-image_upscaled.jpg";
 import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
-import PDF from "../assets/ROHITH_MANJUNATH _RESUME.pdf";
+import PDF from "../assets/ROHITH MANJUNATH RESUME.pdf";
 
 const HeroSection = () => {
   return (
@@ -46,6 +46,7 @@ const HeroSection = () => {
               className="px-6 py-3 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-500 transition-colors duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              download
             >
               Download Resume
             </motion.a>

@@ -7,6 +7,7 @@ import Movie from "../assets/Projects/Joker.jpg";
 import Movie2 from "../assets/Projects/movie-app.jpg";
 import MINIPROJECTS from "../assets/Projects/WEB.jpg";
 import SPOTIFY from "../assets/Projects/Spotify.jpg";
+import BLOG from "../assets/Projects/blogging.webp";
 import ProjectsCard from "./ProjectsCard";
 import { motion } from "framer-motion";
 
@@ -27,6 +28,14 @@ const Projects = () => {
       github: "https://github.com/Rohith-Manjunath/Ecommerce",
       link: "https://ecommerce20.netlify.app/",
       description: `Developed a robust MERN stack eCommerce platform, enabling users to explore a diverse product catalog, securely manage their accounts, and complete seamless transactions. Implemented features such as user authentication, a dynamic shopping cart, and an intuitive admin panel. Utilized technologies like React, Redux Toolkit, Node.js, and MongoDB for a responsive and scalable application.`,
+    },
+    {
+      id: 9,
+      title: "Blogify",
+      img: BLOG,
+      github: "https://github.com/Rohith-Manjunath/Blogify",
+      link: "https://adorable-tanuki-7799ca.netlify.app/",
+      description: `Enjoy an intuitive and responsive UI for creating, managing, and viewing blogs on any device.Engage with real-time chat functionality for instant discussions around blog content.Experience efficient data management and scalability with the powerful MERN stack architecture.`,
     },
     {
       id: 3,
